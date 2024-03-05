@@ -14,3 +14,6 @@ Constraints:
     1≤T≤1031≤T≤103
     1≤N≤1051≤N≤105
     1≤A1,A2,A3...An≤1071≤A1,A2,A3...An≤107
+
+
+//SOLUTION
