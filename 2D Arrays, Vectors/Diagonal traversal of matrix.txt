@@ -1,0 +1,12 @@
+Given a 2D matrix of size NxN, print the sum of the elements of all its diagonals.
+
+Input Format
+First line of input contains T - number of test cases. First line of each test case contains N - size of the matrix. Each of the next N lines contains N integers - the elements of the matrix.
+
+Constraints
+1 <= T <= 100
+1 <= N <= 100
+-100 <= ar[i][j] <= 100
+
+Output Format
+For each test case, print the sum of the elements of all the diagonals, separated by newline. Refer samples for more clarity. 

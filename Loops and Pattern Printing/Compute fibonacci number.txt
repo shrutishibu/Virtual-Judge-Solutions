@@ -1,0 +1,37 @@
+For a given positive integer - N, compute Nth fibonacci number.
+
+Input Format
+First and only line of input contains a positive number - N.
+
+Constraints
+1 <= N <= 20
+
+Output Format
+Print the Nth fibonacci number.
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    long int n;
+    cin>>n;
+    int f;
+    if(n==0){
+        f = 0;
+    }
+    else if(n==1 || n==2){
+        f=1;
+    }
+    else if(n>2){
+        int a=1, b=1;
+        for(int i=3; i<=n; i++){
+            f = a+b;
+            a = b;
+            b = f;
+        }
+    }
+    cout<<f;
+    return 0;
+}

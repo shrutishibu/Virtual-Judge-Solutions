@@ -1,0 +1,63 @@
+Our Chef is hosting a cooking competition in which only two teams can compete at the same time. Both sides should have an equal number of participants to make the competition engaging and fair. Chef was given the duty of forming the two teams as an organizer.
+There are various conditions for forming teams. He will be assigned a number 'N' for each competition, and for each divisor 'D' of 'N' (including 1 and 'N' itself), he will add a member:
+1) If 'D' is even, go to the first team.
+2) if 'D' is odd, go to the second team.
+Chef needs your assistance with the event planning because he is quite busy. Your job is to advise the chef whether or not he can make two teams with the same amount of members.
+For Example:
+For ‘N’ = 10,
+The divisors are:
+1, 2, 5, 10.
+The first team will have two members corresponding to even divisors 2 and 10.
+The second team will have two members corresponding to odd divisors 1 and 5.
+So, in this case, Chef can make two teams.
+
+Input Format
+First line will contain TT, number of testcases. Then the testcases follow.The first and only line of each test case contains an integer ‘N’ denoting the number given to Chef.
+
+Output Format
+For each test case print 1 if Chef can make two teams of equal members with the given ‘N’, else print 0.
+Output for each test case will be printed in a separate line.
+
+Constraints
+    1≤T≤10001≤T≤1000
+    1≤N≤1051≤N≤105
+
+It is guaranteed that the sum of N over all test cases doesn’t exceed 10^5.
+
+Time Limit: 1 sec
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    long int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        vector<int> v(n);
+        for(int i=1; i<=n; i++){
+            if(n%i == 0){
+                v.push_back(i);
+            }
+        }
+        int e=0, o=0;
+        for(int i=0; i<v.size(); i++){
+            if(v[i]%2==0 && v[i]!=0){
+                e++;
+            }
+            else if(v[i]%2!=0 && v[i]!=0){
+                o++;
+            }
+        }
+        if(e==o){
+            cout<<"1\n";
+        }
+        else
+            cout<<"0\n";
+    }
+    return 0;
+}

@@ -1,0 +1,41 @@
+Print right-angled triangle pattern. See example for more details.
+
+Input Format
+First line of input contains a single integer N - the size of the triangle.
+
+Constraints
+1 <= N <= 50
+
+Output Format
+For the given integer, print the right-angled triangle pattern.
+
+Input
+5
+
+Output
+1
+2 6
+3 7 10
+4 8 11 13
+5 9 12 14 15
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    for(int i=0; i<n; i++){
+        int k=n-1;
+        int c = i+1;
+        cout<<i+1<<" ";
+        for(int j=1; j<i+1; j++){
+            cout<<c+k<<" ";
+            c=c+k;
+            k--;
+        }
+        cout<<endl;
+    }
+    return 0;
+}

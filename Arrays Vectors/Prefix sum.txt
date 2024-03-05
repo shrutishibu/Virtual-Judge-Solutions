@@ -1,0 +1,22 @@
+You are given an array of NN integer.
+You have to answer QQ queries.
+Each query contains two integers LL and RR
+For each query print the sum of integers in array from index LL to RR
+
+Input:
+    First line will contain TT, number of testcases. Then the testcases follow.
+    TT blocks of line follows-
+    First line of each block contains an integer NN (number of array elements).
+    Next line contains NN integers (array element).
+    Next line contains an integer QQ (number of queries)
+    Next Q lines contains two integers LL and RR.
+
+Output:
+Print required answer for each query.
+
+Constraints
+    1≤T≤101≤T≤10
+    1≤N≤1051≤N≤105
+    0≤a[i]≤1090≤a[i]≤109
+    1≤Q≤1051≤Q≤105
+    1≤L≤R≤N1≤L≤R≤N

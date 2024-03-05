@@ -1,0 +1,35 @@
+Print rectangle pattern. See example for more details.
+
+Input Format
+First and only line of input contains a single integer N - the size of the rectangle.
+
+Constraints
+1 <= N <= 50
+
+Output Format
+For the given integer, print rectangle pattern as shown in example.
+5432*
+543*1
+54*21
+5*321
+*4321
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=n; j>0; j--){
+            if(j!=i){
+                cout<<j;
+            }
+            else
+                cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}

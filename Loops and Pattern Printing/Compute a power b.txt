@@ -1,0 +1,27 @@
+Given two integers a and b, compute a power b.
+Note: Do not use any inbuilt functions/libraries for your main logic.
+
+Input Format
+First and only line of input contains two positive integers a and b.
+
+Constraints
+1 <= a <= 100
+0 <= b <= 9
+
+Output Format
+Print a power b.
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    long int x, y, p=1;
+    cin>>x>>y;
+    while(y>0){
+        p = p * x;
+        y--;
+    }
+    cout<<p<<endl;
+}

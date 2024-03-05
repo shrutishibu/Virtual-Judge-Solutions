@@ -1,0 +1,42 @@
+Print half diamond pattern using '*'. See example for more details.
+
+Input Format
+First and only line of input contains a single integer N.
+
+Constraints
+1 <= N <= 50
+
+Output Format
+For the given integer, print the half diamond pattern.
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    for(int i=0; i<n; i++){
+        for(int j=i+1; j>0; j--){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    for(int i=n-2; i>=0; i--){
+        for(int j=i+1; j>0; j--){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}

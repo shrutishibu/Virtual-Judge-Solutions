@@ -1,0 +1,33 @@
+Print hollow rectangle pattern using '*'. See example for more details.
+
+Input Format
+Input contains two integers W - width of the rectangle and L - length of the rectangle.
+
+Constraints
+2 <= W <= 50
+2 <= L <= 50
+
+Output Format
+For the given integers W and L, print the hollow rectangle pattern.
+*****
+*   *
+*   *
+*****
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int l, b;
+    cin>>b>>l;
+    for(int i=0; i<l; i++){
+	    for(int j=0; j<b; j++){
+	        if(i==0 || i==l-1 || j==0 || j==b-1)
+	                cout<<"*";
+	        else
+	        	cout<<" ";
+	    }
+        cout<<endl;
+    }
+    return 0;
+}
