@@ -1,0 +1,15 @@
+Given a 2D square matrix, print the matrix in a spiral order. Refer examples for more details. From interviews point of view, after you scan the matrix in a 2D array, try to print the matrix in a spiral order without using any extra space.
+
+Input Format
+First line of input contains T - number of test cases. First line of each test case contains N - size of the matrix [NxN]. Its followed by N lines each containing N integers - elements of the matrix.
+
+Constraints
+1 <= T <= 100
+1 <= N <= 100
+-100 <= ar[i][j] <= 100
+
+Output Format
+For each test case, print the matrix in a spiral order, separated by newline. 
+
+
+//SOLUTION
