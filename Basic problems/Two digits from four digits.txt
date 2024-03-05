@@ -1,0 +1,20 @@
+You are given a four-digit positive integer. Form from it a two-digit number consisting of its middle digits.
+
+Input data
+One four digit positive integer nn.
+
+Output data
+Print the resulting integer. Do not print the leading zeroes.
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    long int n;
+    cin>>n;
+    n = n%1000;
+    n = n/10;
+    cout<<n;
+}

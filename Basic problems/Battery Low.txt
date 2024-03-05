@@ -1,0 +1,37 @@
+Chef's phone shows a Battery Low notification if the battery level is 15%15% or less.
+Given that the battery level of Chef's phone is X%X%, determine whether it would show a Battery low notification.
+
+Input Format
+First line will contain TT, number of test cases. Then the test cases follow. Each test case contains a single line of input, an integer XX, denoting the battery level of the phone.
+
+Output Format
+For each test case, output in a single line YesYes, if the battery level is 15%15% or below. Otherwise, print NoNo.
+You may print each character of YesYes and NoNo in uppercase or lowercase (for example, YeSYeS, YESYES, yesyes will be considered identical).
+
+Constraints
+    1≤T≤1001≤T≤100
+    1≤X≤1001≤X≤100
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    int x[t];
+    for(int i=0; i<t; i++){
+        cin>>x[i];
+    }
+    for(int i=0; i<t; i++){
+        if(x[i]<=15)
+            cout<<"yes";
+        else
+            cout<<"no";
+        cout<<endl;
+    }
+}

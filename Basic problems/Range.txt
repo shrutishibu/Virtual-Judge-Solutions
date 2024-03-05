@@ -1,0 +1,26 @@
+Write a program which reads three integers a, b and c, and prints "Yes" if a < b < c, otherwise "No".
+
+Input
+Three integers a, b and c separated by a single space are given in a line.
+
+Output
+Print "Yes" or "No" in a line.
+
+Constraints
+    0 ≤ a, b, c ≤ 100
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t, h, m;
+    cin>>t>>h>>m;
+    if(t<h && h<m)
+        cout<<"Yes";
+    else
+        cout<<"No";
+    cout<<endl;
+    return 0;
+}

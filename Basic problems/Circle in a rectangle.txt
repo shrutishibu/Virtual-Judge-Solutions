@@ -1,0 +1,28 @@
+Write a program which reads a rectangle and a circle, and determines whether the circle is arranged inside the rectangle. As shown in the following figures, the upper right coordinate (W,H)(W,H) of the rectangle and the central coordinate (x,y)(x,y) and radius rr of the circle are given. 
+
+Input
+Five integers WW, HH, xx, yy and rr separated by a single space are given in a line.
+
+Output
+Print "Yes" if the circle is placed inside the rectangle, otherwise "No" in a line.
+
+Constraints
+    −100≤x,y≤100−100≤x,y≤100
+    0<W,H,r≤1000<W,H,r≤100
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int w, h, x, y, r;
+    cin>>w>>h>>x>>y>>r;
+    if(x+r<=w && y+r<=h && x-r>=0 && y-r>=0){
+        cout<<"Yes";
+    }
+    else
+        cout<<"No";
+    cout<<endl;
+    return 0;
+}

@@ -1,0 +1,20 @@
+Integer nn is given. Print the next even integer for nn.
+
+Input data
+One integer nn.
+
+Output data
+Print the next even integer after nn.
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    if(n%2 == 0)
+        cout<<n+2;
+    else
+        cout<<n+1;
+}

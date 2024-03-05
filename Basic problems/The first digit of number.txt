@@ -1,0 +1,23 @@
+Find the first digit of an integer. Start count digits from the leftmost one.
+
+Input data
+One 64-bit integer containing at least one digits. The number can be negative.
+
+Output data
+Print the first digit of a given integer.
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    long int n;
+    cin>>n;
+    if(n<0)
+        n = n * (-1);
+    while(n>=10){
+        n = n/10;
+    }
+    cout<<n%10;;
+}

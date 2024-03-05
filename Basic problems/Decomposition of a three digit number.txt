@@ -1,0 +1,26 @@
+Decompose a given 3-digit number to digits.
+
+Input data
+One three digit integer (positive or negative).
+
+Output data
+Print each digit in separate line as shown in example.
+
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    int i = 1000;
+    cin>>n;
+    if(n<0)
+        n = n * (-1);
+    while(i>=10){
+        i = i/10;
+        cout<<n/i<<endl;
+        n = n%i;
+    }
+    return 0;
+}

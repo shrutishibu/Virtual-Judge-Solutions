@@ -1,0 +1,18 @@
+n schoolchildren divide kk apples evenly, the residue remains in the basket. How many apples remains in the basket?
+
+Input data
+Two integers nn and kk not greater than 15001500 — rarely happens in school more pupils, and where to find such a basket?
+
+Output data
+Print the number of apples in the basket.
+
+
+//SOLUTION
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n, k;
+    cin>>n;
+    cin>>k;
+    cout<<k%n;
+}
