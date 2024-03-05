@@ -10,3 +10,7 @@ Constraints
 
 Output Format
 For each test case, print the sum of the elements of all the diagonals, separated by newline. Refer samples for more clarity. 
+
+
+
+//SOLUTION
