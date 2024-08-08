@@ -13,3 +13,22 @@ Print row-wise sum of the matrix, separated by a newline.
 
 
 //SOLUTION
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    int r, c;
+    cin>>r>>c;
+    while(r--){
+        int sum=0;
+        for(int i=0; i<c; i++){
+            int ele;
+            cin>>ele;
+            sum += ele;
+        }
+        cout<<sum<<"\n";
+    }
+}
