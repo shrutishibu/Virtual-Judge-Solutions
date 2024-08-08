@@ -22,3 +22,33 @@ Constraints:
     1≤Q≤1061≤Q≤106
     1≤S,E≤N1≤S,E≤N
     1≤X≤1071≤X≤107
+
+//SOLUTION
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    int t;
+    cin>>t;
+    while(t--){
+        int comp;
+        long int sum;
+        cin>>comp;
+        vector <int> weight(comp);
+        for(int i=0; i<comp; i++){
+            cin>>weight[i];
+        }
+        sum = accumulate(weight.begin(), weight.end(), 0);
+        int tasks;
+        cin>>tasks;
+        while(tasks--){
+            int s, e, w;
+            cin>>s>>e>>w;
+            sum += (e-s+1)*w;
+        }
+        cout<<sum<<"\n";
+    }
+}
