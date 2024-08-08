@@ -1,4 +1,4 @@
 # Virtual-Judge-Solutions
 Website used - https://vjudge.net
 
-This contains accepted solutions of the Virtual Judge coding platform. 
+This contains accepted solutions of the Virtual Judge coding platform practiced during college placement training. 
